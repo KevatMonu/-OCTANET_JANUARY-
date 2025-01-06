@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locomotive Smooth Scroll</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.css">
+    <style>
+        body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        .nav1, .nav2 { padding: 10px 20px; background-color: #007BFF; color: #fff; position: fixed; width: 100%; z-index: 100; }
+        .nav2 a, #btn { margin: 0 10px; color: #fff; text-decoration: none; cursor: pointer; }
+        .nav2 a:hover, #btn:hover { text-decoration: underline; }
+        .section { height: 100vh; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #ccc; }
+    </style>
+</head>
+<body data-scroll-container>
+
+    <div class="nav1">Dev code</div>
+    <div class="nav2">
+        <a href="#page1" data-scroll-to="page1">What we do</a>
+        <a href="#page2" data-scroll-to="page2">How we Work</a>
+        <a href="#pricing" data-scroll-to="pricing">Pricing</a>
+        <a href="#page3" data-scroll-to="page3">Our Team</a>
+        <button id="btn">Download</button>
+    </div>
+
+    <div id="page1" class="section" data-scroll-section style="background-color: #f4f4f4;">What we do</div>
+    <div id="page2" class="section" data-scroll-section style="background-color: #e4e4e4;">How we Work</div>
+    <div id="pricing" class="section" data-scroll-section style="background-color: #d4d4d4;">Pricing</div>
+    <div id="page3" class="section" data-scroll-section style="background-color: #c4c4c4;">Our Team</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+
+        // Attach navigation links to locomotive scroll
+        document.querySelectorAll('[data-scroll-to]').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = link.getAttribute('data-scroll-to');
+                scroll.scrollTo(document.getElementById(target));
+            });
+        });
+
+        // Handle download button
+        document.getElementById('btn').addEventListener('click', () => {
+            alert('Download button clicked!');
+        });
+    </script>
+</body>
+</html>
