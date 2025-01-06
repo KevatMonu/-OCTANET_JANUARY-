@@ -404,3 +404,189 @@ html,body{
     font-weight: 500;
     padding: .2vw 0 .5vw 0;
 }
+
+/*Responsive*/
+
+@media screen and (max-width:1000px) {
+
+    #main{
+        overflow: hidden;
+    }
+    .nav2{
+        display: none;
+    }
+
+    .nav1{
+        font-size: 5vw;
+        padding: 5vw 0;
+    }
+    #h-two img{
+        display: none;
+    }
+
+#hero{
+    min-height: 50vh;
+}
+
+    #h-one h1{
+        font-size: 7.5vw;
+        line-height: 1.4;
+    }
+    #h-one p{
+        font-size: 3vw;
+        margin: 2.5vw 0;
+    }
+
+   #h-one #btn2{
+        font-size: 3.4vw;
+        padding: 2.8vw 1.5vw;
+        margin-top: 3vw;
+    }
+    .p1{
+        padding-bottom: 12vw;
+    }
+    .p1 h3{
+        font-size: 4vw;
+        margin: 10vw 0;
+    }
+
+    .brand{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 5.5vw;
+        
+    }
+
+    .brand img{
+        height: 7vw;
+    }
+
+    .p2-box{
+        flex-direction: column;
+        gap: 15vw;
+        margin-bottom: 10vw;
+    }
+    .p2 h3{
+        font-size: 5vw; 
+        margin: 10vw 0 15vw 0;
+    }
+
+    .role img{
+        height: 15vw;
+    }
+
+    .role h5{
+        font-size: 5vw;
+    }
+
+    .role{
+        gap: 5vw;
+        border-bottom: 1px solid #bab6b6;
+        padding: 0 0 5vw 0;
+    }
+
+    .page2-box{
+        flex-direction: column;
+        gap: 1vw;
+        margin-bottom: 5vw;
+    }
+
+    .card h6{
+        font-size: 5vw;
+        margin: 5vw 0;
+        padding-bottom: 2vw;
+    }
+
+    .card h4 span{
+        font-size: 7vw;
+    }
+    .card h4{
+        font-size: 3vw;
+    }
+    .card p{
+        font-size: 4vw;
+        margin: 2vw 0;
+    }
+
+    .card #cardbtn{
+        font-size: 4vw;
+        margin: 4vw 0;
+        padding: 3vw 25vw;
+    }
+
+    .card p br{
+        display: none;
+    }
+
+    #page2{
+        padding: 1vw 5vw
+    }
+
+    #page2 h5{
+        font-size: 5vw;
+        padding: 4vw 0;
+    }
+
+    #page2 h1{
+        font-size: 9.5vw;
+        margin: 10vw 0;
+    }
+
+    .team h1{
+        font-size: 5vw;
+        margin: 10vw 0;
+    }
+    .employe{
+        flex-direction: column;
+    }
+
+    .person h5{
+        font-size: 5vw;
+        margin: 2vw 0;
+    }
+
+    .person h6{
+        font-size: 4vw;
+    }   
+
+    .source h1{
+        font-size: 5vw;
+        margin: 10vw 0;
+        padding-bottom: 10vw;
+    }
+
+    .source p{
+        font-size: 10vw;
+        margin: 5vw 0;
+    }
+
+    .source #btn3{
+        font-size: 4vw;
+        padding: 3vw 15vw;
+        margin: 5vw 0;
+    }
+
+    #page4{
+        min-height: 65vh;
+    }
+
+    .foot{
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+        padding-bottom: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot-opt h5{
+        font-size: 5vw;
+        padding: 10vw 0 5vw 0;
+    }
+    .foot-opt p{
+        font-size: 3vw;
+        padding: .2vw 0 2vw 0;
+        font-weight: 200;
+    }
+}
+
+
